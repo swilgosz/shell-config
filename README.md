@@ -50,12 +50,17 @@ I use several shortcuts for git to improve my speed of repository management. Fo
 aliases, so I use shell aliases only for commands without need to autocomplete branches.
 
 ``` shell
-alias cm='git commit -m' #this allows me to use 'cm "Commit message"'
-alias ll='git pull -r'   #always pull and rebase actuall branch
-alias ph='git push'      #always push actual branch.
-alias st='git status'
-alias rb='git rebase master' #I often rebase with master and almost never with other branches.
-alias rbi='git rebase -i'  #interactive rebase
+alias ga='git add -p'
+alias gaa='git add -A'
+alias gc='git commit -m' #this allows me to use 'gc "Commit message"'
+alias gca='git commit --amend'
+alias gl='git pull -r'   #always pull and rebase actuall branch
+alias gm='git merge'
+alias go='git checkout'
+alias gp='git push'      #always push actual branch.
+alias gs='git status'
+alias gr='git rebase master' #I often rebase with master and almost never with other branches.
+alias gri='git rebase -i'
 ```
 
 ### 4. Git rewrite author

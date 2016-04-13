@@ -16,7 +16,7 @@ tmux send-keys -t ${window1}.0 "${prcmd}; rails c" C-m
 tmux send-keys -t ${window1}.1 "${prcmd}; ${scmd}" C-m
 tmux send-keys -t ${window1}.2 $prcmd C-m
 
+tmux select-pane -t ${window1}.2
 tmux select-window -t ${window2}
-
 tmux attach -t ${session}
 
