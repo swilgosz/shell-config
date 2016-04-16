@@ -18,6 +18,7 @@ alias t='tmux attach -t'
 alias za='vim ~/bin/shell-config/bash_aliases.sh'
 alias zg='vim ~/.gitconfig'
 alias zt='vim ~/.tmux.conf'
+alias zz='vim ~/.zshrc'
 
 #rails aliases
 alias ss='spring rspec --color'
