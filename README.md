@@ -5,25 +5,49 @@ terminal.
 
 ## Installation
 
-1. clone this repository `git clone https://github.com/wilgoszpl/shell-config.git ~/bin`
+1. clone this repository with all plugins included
+
+    ```shell
+    git clone https://github.com/wilgoszpl/shell-config.git ~/bin
+    cd ~/bin; git submodule init; git submodule update
+    ```
+
+2. install [iterm2](https://www.iterm2.com/index.html)
+
+3. install tmux 
+    ```shell
+    brew install tmux
+    ```
+### ZSH (Recommended)
+
+We strongly recommend to use ZSH shell with this config. To change your default shell into ZSH, just type `chsh -s /usr/zsh` in your terminal.
+
+1. Install [.oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
+    
+    ```shell
+    sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+    ```
+2. Add those lines in your newly created `~.zshrc` file
+
+    ```shell
+    ZSH_CUSTOM=$HOME/bin/.oh-my-zsh/custom #to load custom plugins in this repository
+    source $HOME/bin/.zshrc  #to load templates and all of fancy stuff for tmux and more
+    ```
+
+3. You may need to set gem paths to get rid of warning when starting terminal.
+    
+    ```shell
+    export GEM_HOME="$HOME/.gem"
+    export GEM_PATH="$HOME/.gem"
+
+    ```
+    
+
+### BASH
 2. Add this line to your `~/.bash_profile` file
 
     ```shell
-    source ~/bin/.source.sh
-    ```
-3. clone subprojects:
-    
-    ```shell
-    git clone git@github.com:chriskempson/base16-shell.git ~/bin/base16-shell
-    ```
-
-    ```shell
-    git clone git@github.com:chriskempson/base16-iterm2.git ~/bin/base16-iterm2
-    ```
-4. install [iterm2](https://www.iterm2.com/index.html)
-5. install tmux 
-    ```shell
-    brew install tmux
+    source ~/bin/.bashrc
     ```
 
 ## Script list
