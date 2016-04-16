@@ -1,0 +1,21 @@
+[submodule ".oh-my-zsh/custom/plugins/alias-tips"]
+	path = .oh-my-zsh/custom/plugins/alias-tips
+	url = git@github.com:djui/alias-tips.git
+[submodule ".oh-my-zsh/custom/plugins/zsh-autosuggestions"]
+	path = .oh-my-zsh/custom/plugins/zsh-autosuggestions
+	url = git@github.com:zsh-users/zsh-autosuggestions.git
+[submodule ".oh-my-zsh/custom/plugins/zsh-completions"]
+	path = .oh-my-zsh/custom/plugins/zsh-completions
+	url = git@github.com:zsh-users/zsh-completions.git
+[submodule ".oh-my-zsh/custom/plugins/zsh-syntax-highlighting"]
+	path = .oh-my-zsh/custom/plugins/zsh-syntax-highlighting
+	url = https://github.com/zsh-users/zsh-syntax-highlighting
+[submodule "base16-shell"]
+	path = base16-shell
+	url = https://github.com/chriskempson/base16-shell.git
+[submodule "base16-iterm2"]
+	path = base16-iterm2
+	url = https://github.com/chriskempson/base16-iterm2.git
+[submodule "shell-config/git-rewrite-author"]
+	path = shell-config/git-rewrite-author
+	url = https://github.com/davidfokkema/git-rewrite-author.git
