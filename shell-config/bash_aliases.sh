@@ -14,6 +14,7 @@ alias gri='git rebase -i'
 
 #tmux commands
 alias t='tmux attach -t'
+alias tl='tmux list-sessions'
 
 #.dot files
 alias za='vim ~/bin/shell-config/bash_aliases.sh'
