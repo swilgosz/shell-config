@@ -1,7 +1,7 @@
 # shell-config
 
 This is the config I use to work with web applications. Designed to make my terminal as productive as possible. This is tested and designed for iTerm2
-terminal. 
+terminal.
 
 ## Installation
 
@@ -14,34 +14,40 @@ terminal.
 
 2. install [iterm2](https://www.iterm2.com/index.html)
 
-3. install tmux 
+3. install tmux
     ```shell
     brew install tmux
     ```
+4. in your create `~/.tmux.conf` file and add this line there:
+    ```shell
+    source ~/bin/tmux/.tmux.conf`
+    ```
+
 ### ZSH (Recommended)
 
 We strongly recommend to use ZSH shell with this config. To change your default shell into ZSH, just type `chsh -s /usr/zsh` in your terminal.
 
 1. Install [.oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
-    
+
     ```shell
     sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
     ```
-2. Add those lines in your newly created `~.zshrc` file
+2. Add those lines in your newly created `~.zshrc` file. Please, ensure, that you have zsh plugins before `oh-my-zsh` file loaded, and `.zshrc` after that.
 
     ```shell
-    ZSH_CUSTOM=$HOME/bin/.oh-my-zsh/custom #to load custom plugins in this repository
-    source $HOME/bin/.zshrc  #to load templates and all of fancy stuff for tmux and more
+    source $HOME/bin/.zsh_plugins
+    source $ZSH/oh-my-zsh.sh
+    source $HOME/bin/.zshrc
     ```
 
 3. You may need to set gem paths to get rid of warning when starting terminal.
-    
+
     ```shell
     export GEM_HOME="$HOME/.gem"
     export GEM_PATH="$HOME/.gem"
 
     ```
-    
+
 
 ### BASH
 2. Add this line to your `~/.bash_profile` file
