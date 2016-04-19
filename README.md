@@ -14,13 +14,23 @@ terminal.
 
 2. install [iterm2](https://www.iterm2.com/index.html)
 
-3. install tmux
+
+### Tmux
+
+All tmux specific config is stored in `~/tmux` directory.
+
+1. install tmux
     ```shell
     brew install tmux
     ```
-4. in your create `~/.tmux.conf` file and add this line there:
+2. in your create `~/.tmux.conf` file and add this line there:
     ```shell
     source ~/bin/tmux/.tmux.conf`
+    ```
+3. run tmux and install plugins:
+    ```shell
+    tmux
+    Ctrl+q, I (shift i)
     ```
 
 ### ZSH (Recommended)
