@@ -1,6 +1,7 @@
 # Would you like to use another custom folder than $ZSH/custom?
 ZSH_CUSTOM=$HOME/bin/.oh-my-zsh/custom
 
+
 Plugins+=(zsh-completions)
 plugins+=(zsh-autosuggestions)
 plugins+=(zsh-syntax-highlighting)

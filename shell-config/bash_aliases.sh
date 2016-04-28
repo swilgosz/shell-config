@@ -21,8 +21,15 @@ alias za='vim ~/bin/shell-config/bash_aliases.sh'
 alias zg='vim ~/.gitconfig'
 alias zp='vim ~/bin/zsh-plugins'
 alias zt='vim ~/bin/tmux/.tmux.conf'
+alias zv='vim ~/.vim_runtime/my_configs.vim'
+alias zvp='vim ~/.vim_runtime/vimrcs/plugins_config.vim'
 alias zz='vim ~/.zshrc'
 
 #rails aliases
 alias ss='spring rspec --color'
+alias st='spring stop'
 alias rake='bundle exec rake'
+
+
+#source aliases
+alias soa='source ~/bin/shell-config/bash_aliases.sh'
