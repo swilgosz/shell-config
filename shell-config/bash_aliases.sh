@@ -2,7 +2,8 @@
 alias ga='git add -p'
 alias gaa='git add -A'
 alias gan='git add -N'
-alias gc='git commit -m' #this allows me to use 'gc "Commit message"'
+alias gc='git commit'
+alias gcm='git commit -m' #this allows me to use 'gc "Commit message"'
 alias gca='git commit --amend'
 alias gl='git pull -r'   #always pull and rebase actuall branch
 alias gm='git merge'
