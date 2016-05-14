@@ -1,3 +1,4 @@
+alias ct='ctags -R --exclude=.git --exclude=node_modules --exclude=bower_components --exclude=tmp'
 #git commands
 alias ga='git add -p'
 alias gaa='git add -A'
