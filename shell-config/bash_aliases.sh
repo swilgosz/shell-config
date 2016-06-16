@@ -1,4 +1,10 @@
+#cd commands
+alias cdv='cd ~/.vim_runtime'
+alias cdb='cd ~/bin/'
+alias cdp='cd ~/projects'
+
 alias ct='ctags -R --exclude=.git --exclude=node_modules --exclude=bower_components --exclude=tmp'
+
 #git commands
 alias ga='git add -p'
 alias gaa='git add -A'
