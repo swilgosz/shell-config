@@ -20,6 +20,7 @@ alias gs='git status'
 alias gr='git rebase master' #I often rebase with master and almost never with other branches.
 alias gri='git rebase -i'
 
+alias lsizes='find . -maxdepth 1 -type d -mindepth 1 -exec du -hs {} \;'
 #tmux commands
 alias t='tmux attach -t'
 alias tl='tmux list-sessions'
