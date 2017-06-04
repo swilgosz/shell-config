@@ -9,7 +9,7 @@ tmux send-keys -t "${session}:1" "${prcmd}; vim" C-m
 
 #ember server and test
 tmux new-window -n tests
-tmux split-window -h -p 50
+# tmux split-window -h -p 50
 tmux send-keys -t ${session}:2 "${prcmd}; ${tcmd}" C-m
 
 tmux new-window -n server
