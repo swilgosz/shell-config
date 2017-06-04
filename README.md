@@ -8,8 +8,7 @@ terminal.
 1. clone this repository with all plugins included
 
     ```shell
-    git clone https://github.com/wilgoszpl/shell-config.git ~/bin
-    cd ~/bin; git submodule init; git submodule update
+    git clone --recursive -j8 https://github.com/wilgoszpl/shell-config.git ~/bin
     ```
 
 2. install [iterm2](https://www.iterm2.com/index.html)
@@ -27,7 +26,7 @@ All tmux specific config is stored in `~/tmux` directory.
     ```shell
     source ~/bin/tmux/.tmux.conf`
     ```
-3. run tmux and install plugins:
+3. clone all plugins run tmux and install plugins:
     ```shell
     tmux
     Ctrl+q, I (shift i)
@@ -37,12 +36,14 @@ All tmux specific config is stored in `~/tmux` directory.
 
 We strongly recommend to use ZSH shell with this config. To change your default shell into ZSH, just type `chsh -s /usr/zsh` in your terminal.
 
-1. Install [.oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
+1. Copy .zshrc from ~/bin/dotfiles/.zshrc
+
+2. Install [.oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
 
     ```shell
-    sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+    export ZSH=$HOME/bin/.zshrc; sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
     ```
-2. Add those lines in your newly created `~.zshrc` file. Please, ensure, that you have zsh plugins before `oh-my-zsh` file loaded, and `.zshrc` after that.
+3. Add those lines in your newly created `~.zshrc` file. Please, ensure, that you have zsh plugins before `oh-my-zsh` file loaded, and `.zshrc` after that.
 
     ```shell
     source $HOME/bin/.zsh_plugins
@@ -50,7 +51,7 @@ We strongly recommend to use ZSH shell with this config. To change your default 
     source $HOME/bin/.zshrc
     ```
 
-3. You may need to set gem paths to get rid of warning when starting terminal.
+4. You may need to set gem paths to get rid of warning when starting terminal.
 
     ```shell
     export GEM_HOME="$HOME/.gem"
