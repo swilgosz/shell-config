@@ -1,3 +1,8 @@
-source $HOME/bin/project-specific/.zshrc
-source $HOME/bin/shell-config/.zshrc
-source $HOME/bin/shell-config/bash_aliases.sh
+export EDITOR="vim"
+
+if [ -f "$HOME/.config/zsh/project-specific/private.sh" ]
+then
+  source $HOME/.config/zsh/project-specific/private.sh
+fi
+
+source $HOME/.config/zsh/bash_aliases.sh

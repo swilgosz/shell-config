@@ -6,4 +6,3 @@ Plugins+=(zsh-completions)
 plugins+=(zsh-autosuggestions)
 plugins+=(zsh-syntax-highlighting)
 plugins+=(alias-tips)
-
