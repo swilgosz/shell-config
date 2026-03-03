@@ -14,8 +14,10 @@ alias gl='git pull -r'   #always pull and rebase actuall branch
 alias gmy='glog --author="Sebastian Wilgosz"' # log the tree of owned commits
 alias gm='git merge --no-ff'                  # merge branch
 alias go='git checkout'                       # checkout to the different branch
-alias gp='git push'                           # always push actual branch.
+alias gp='git push'                           # push branch specified after alias.
+alias gpc='git push -u origin HEAD'           # always push to same branch as current in origin
 alias gpf='git push --force-with-lease'       # safely force push to the current branch
+alias gpfc='git push -u origin HEAD'
 alias gs='git status'                         # list changed files
 alias gr='git rebase master'                  # I often rebase with master and almost never with other branches.
 alias gbrm='git branch --merged | xargs git branch -D' #remove all merged branches
