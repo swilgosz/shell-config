@@ -26,6 +26,7 @@ alias gpruneall='git remote prune origin'     # remove legacy branches from orig
 
 alias gbrm='git branch --merged | xargs git branch -D' #remove all merged branches
 
+
 gbrf(){
   str=$1
   echo "Removing branches including $str"
