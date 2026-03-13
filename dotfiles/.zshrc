@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-export ZSH=~/bin/.oh-my-zsh
+export ZSH=~/.config/zsh/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -51,7 +51,7 @@ autoload -U compinit && compinit
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git)
-source ~/bin/.zsh_plugins
+source ~/.config/zsh/.zsh_plugins
 
 # User configuration
 
@@ -59,7 +59,7 @@ source ~/bin/.zsh_plugins
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
-source $HOME/bin/.zshrc
+source $HOME/.config/zsh/.zshrc
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8

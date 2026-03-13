@@ -1,9 +1,8 @@
-alias soa="source ~/.config/zsh/bash_aliases.sh"
+alias soa="source ~/.config/zsh/aliases/bash_aliases.sh"
 
 source "$HOME/.config/zsh/aliases/ai_bash_aliases.sh"
 source "$HOME/.config/zsh/aliases/git_bash_aliases.sh"
 source "$HOME/.config/zsh/aliases/docker_bash_aliases.sh"
-source "$HOME/.config/zsh/aliases/vc_bash_aliases.sh"
 source "$HOME/.config/zsh/aliases/ruby_bash_aliases.sh"
 source "$HOME/.config/zsh/aliases/tmux_bash_aliases.sh"
 source "$HOME/.config/zsh/aliases/vim_bash_aliases.sh"
