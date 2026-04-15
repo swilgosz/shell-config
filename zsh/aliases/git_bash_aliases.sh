@@ -13,7 +13,8 @@ alias glc='git pull -r origin $(git branch --show-current)'   #always pull and r
 # alias glog="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit -n 15"
 alias gmy='glog --author="Sebastian Wilgosz"' # log the tree of owned commits
 alias gm='git merge --no-ff'                  # merge branch
-alias go='git checkout'                       # checkout to the different branch
+alias go='~/.config/zsh/scripts/wt.sh'        # worktree checkout — create or reuse (replaces git checkout)
+alias gor='git worktree remove'               # remove a worktree: gor <name>
 alias gp='git push'                           # push branch specified after alias.
 alias gpc='git push -u origin HEAD'           # always push to same branch as current in origin
 alias gpf='git push --force-with-lease'       # safely force push to the current branch

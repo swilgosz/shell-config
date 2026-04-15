@@ -67,6 +67,18 @@ We strongly recommend to use ZSH shell with this config. To change your default 
     source ~/bin/.bashrc
     ```
 
+## Setup
+
+### Symlinking scripts
+
+The `zsh/scripts/` folder must be symlinked into `~/.config/zsh/` to make scripts available:
+
+```shell
+ln -s ~/Projects/shell-config/zsh/scripts ~/.config/zsh/scripts
+```
+
+This mirrors how `zsh/aliases/` is already symlinked.
+
 ## Script list
 
 1. Git branch color
@@ -89,6 +101,22 @@ Based on http://gitweb.hawaga.org.uk/ . This script autocompletes git commands a
 
 I use several shortcuts for git to improve my speed of repository management. For now I didn't updated `git autocomplete script` to work with
 aliases, so I use shell aliases only for commands without need to autocomplete branches.
+
+We use `git tree` instead of `git checkout`.env
+
+┌─────────────────────┬────────────────────────────────────────┐
+│       Command       │                 Result                 │
+├─────────────────────┼────────────────────────────────────────┤
+│ go                  │ lists all worktrees                    │
+├─────────────────────┼────────────────────────────────────────┤
+│ go coupon           │ folder: coupon, branch: feature/coupon │
+├─────────────────────┼────────────────────────────────────────┤
+│ go feature/coupon   │ folder: coupon, branch: feature/coupon │
+├─────────────────────┼────────────────────────────────────────┤
+│ go coupon my-branch │ folder: coupon, branch: my-branch      │
+├─────────────────────┼────────────────────────────────────────┤
+│ gor coupon          │ removes the worktree                   │
+└─────────────────────┴────────────────────────────────────────┘
 
 ``` shell
 alias ga='git add -p'
